@@ -198,3 +198,25 @@ button.react-multiple-carousel__arrow--left::before {
 li.carousel-item-custom {
   width: 390px !important;
 }
+
+button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeLarge {
+  border-radius: 10px;
+  color: #98A2B3;
+  border: 0px;
+}
+
+button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeLarge.MuiPaginationItem-outlined.MuiPaginationItem-rounded.MuiPaginationItem-previousNext.css-39f4bj-MuiButtonBase-root-MuiPaginationItem-root {
+  border-radius: 10px;
+  border: 2px solid #D0D5DD;
+}
+
+button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeLarge.MuiPaginationItem-outlined.MuiPaginationItem-rounded.Mui-selected.MuiPaginationItem-page.css-39f4bj-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: transparent;
+  border: 2px solid #5801A9;
+  color: #000000;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiPaginationItem-icon.css-17ly9d0-MuiSvgIcon-root-MuiPaginationItem-icon {
+  color: black;
+  font-size: 30px;
+}

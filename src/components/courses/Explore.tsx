@@ -17,6 +17,7 @@ import "react-multi-carousel/lib/styles.css"
 import StarRating from "../bootcamp/StarRating"
 import { LuBadgeCheck } from "react-icons/lu";
 import { CardWithLink } from "./Cards"
+import { Pagination } from "@mui/material"
 
 const Explore = () => {
   const router = useRouter()
@@ -67,7 +68,7 @@ const Explore = () => {
       </div>
 
       <div className="block !mt-[-15px] lg:mt-0 xl:hidden text-center overflow-hidden rounded-[8px] lg:rounded-none mx-12 relative bottom-4">
-        <Carousel responsive={responsive}>
+        <Carousel autoPlay infinite responsive={responsive}>
           {skills.map((item, index) => (
             <p className="bg-[#2D3A4B] rounded-[8px] xl:rounded-none p-6 text-white" key={index}>
               {item}
@@ -94,11 +95,16 @@ const Explore = () => {
           {/* cards  */}
           {/* <div className="mx-12 sm:mx-0"> */}
           <CarouselComp />
-          <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 lg:hidden flex-col w-full">
-            <CardWithLink />
-            <CardWithLink />
-            <CardWithLink />
-            <CardWithLink />
+          <div className="lg:hidden">
+            <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 flex-col w-full">
+              <CardWithLink />
+              <CardWithLink />
+              <CardWithLink />
+              <CardWithLink />
+            </div>
+            <div className="w-full mx-auto flex justify-center items-center bg-white py-6">
+              <Pagination size="large" className="" count={6} variant="outlined" shape="rounded" />
+            </div>
           </div>
           {/* </div> */}
         </div>
@@ -130,7 +136,7 @@ const Explore = () => {
                   <button className="bg-[#2D3A4B] hidden lg:block hover:bg-gray-500 text-white text-[11px] font-bold py-2 px-4 rounded cursor-pointer">
                     Get this course
                   </button>
-                  <h2 className="font-bold lg:text-[32px] leading-5 tracking-tight lg:leading-[1.1] text-[23px] sm:text-4xl text-[#2D3A4B] lg:tracking-tight my-4 cursor-pointer">
+                  <h2 className="font-bold lg:text-[32px] leading-5 tracking-tight lg:leading-[1.1] text-[23px] sm:text-4xl text-[#2D3A4B] lg:tracking-tight my-4 md:my-0 lg:my-4 cursor-pointer">
                     Introduction to Web Development
                   </h2>
                   
